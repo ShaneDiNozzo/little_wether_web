@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>little_weather</title>
+
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="js/app.js" charset="UTF-8"></script>
+    <script src="js/jq_213-min.js"></script>
+
+</head>
+<body>
+
+<header id="header">
+    <h1 id="h1">Little Weather</h1>
+    <h3 id="h3">Updated</h3>
+</header>
+
+<label for="city_in">Enter the city:</label>
+<input type="text" id="city_in"/>
+<br>
+<button id="searchCityButton" onclick="getCity()">Try to get weather</button>
+<br>
+<button id="getLatLonButton" onclick="checkLocation()">Try to get weather info based on current position</button>
+<br><br>
+
+<div id="container">
+    <div id="loc_div">City:&#32<span id="loc"></span></div>
+    <div id="temp_div">Temperature:&#32<span id="temp"></span></div>
+    <img id="img" src=""/>
+
+    <div id="desc_div"><span id="desc"></span></div>
+    <div id="lat"></div>
+    <div id="long"></div>
+</div>
+
+<footer id="footer">
+    <p id="poweredByFooter">Powered by<img id="foot_wu" src=""/></p>
+    <br>
+    <p id="createdByFooter">Created by Shane DiNozzo</p>
+</footer>
+
+</body>
+</html>

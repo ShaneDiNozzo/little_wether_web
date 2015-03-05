@@ -1,0 +1,23 @@
+#city_in {
+  font-size: 16px;
+}
+
+#container {
+  text-align: center;
+}
+
+#loc {
+  color: red;
+}
+
+#temp {
+  font-size: 23px;
+}
+
+#poweredByFooter {
+    text-align: start;
+}
+
+#createdByFooter {
+    text-align: end;
+}
