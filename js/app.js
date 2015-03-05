@@ -19,6 +19,7 @@ function getCity() {
 
             var desc = parsed_json['current_observation']['weather'];
             $('#desc').html(desc);
+
             //var wind = parsed_json['current_observation']['wind_string'];
             //var city_full = parsed_json['current_observation']['observation_location']['full'];
             //var co = parsed_json['current_observation']['display_location'];
