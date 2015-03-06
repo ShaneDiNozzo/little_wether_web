@@ -12,7 +12,6 @@ function getCity() {
             $('#temp').html(temp_c + "&degC");
 
             var imgkep = parsed_json['current_observation']['image']['url'];
-            $('#foot_wu').attr('src', imgkep);
 
             var imgicon = parsed_json['current_observation']['icon_url'];
             $('#img').attr('src', imgicon);
@@ -50,7 +49,6 @@ function getPosition(position) {
             $('#temp').html(temp_c + "&degC");
 
             var imgkep = parsed_json['current_observation']['image']['url'];
-            $('#foot_wu').attr('src', imgkep);
 
             var imgicon = parsed_json['current_observation']['icon_url'];
             $('#img').attr('src', imgicon);

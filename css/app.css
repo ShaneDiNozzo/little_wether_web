@@ -1,23 +1,26 @@
-#city_in {
-  font-size: 16px;
+div.ui-input-search {
+    width: 200px !important
+}
+
+#searchCityButton {
+    width: 175px !important
+}
+
+#getLatLonButton {
+    width: 270px !important
+}
+
+#foot_wu {
+    width  : 40%;
+    height : auto;
+}
+   
+.ui-footer {
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
 }
 
 #container {
-  text-align: center;
-}
-
-#loc {
-  color: red;
-}
-
-#temp {
-  font-size: 23px;
-}
-
-#poweredByFooter {
-    text-align: start;
-}
-
-#createdByFooter {
-    text-align: end;
+    text-align: center;
 }

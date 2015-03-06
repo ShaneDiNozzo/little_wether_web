@@ -5,30 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
 
-    <title>little_weather</title>
+    <title>Little Weather</title>
+    <link rel="shortcut icon" href="favicon.ico">
 
+    <link rel="stylesheet" type="text/css" href="css/jqm145min.css">
+    <script src="js/jq213min.js"></script>
+    <script src="js/jqm145min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <script src="js/app.js" charset="UTF-8"></script>
-    <script src="js/jq_213-min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+
+    <script>
+        $(document).ready(function () {
+            $('#foot_wu').attr('src', 'wndrlogo.png');
+            $('#city_in').attr('size', 60);
+        });
+    </script>
 
 </head>
-<body>
+<body id="bdy">
 
-<header id="header">
-    <h1 id="h1">Little Weather</h1>
-    <h3 id="h3">Updated</h3>
-</header>
+<div data-role="header">
+    <h1>Little Weather</h1>
+</div>
 
-<label for="city_in">Enter the city:</label>
-<input type="text" id="city_in"/>
-<br>
-<button id="searchCityButton" onclick="getCity()">Try to get weather</button>
-<br>
-<button id="getLatLonButton" onclick="checkLocation()">Try to get weather info based on current position</button>
-<br><br>
+<label for="city_in">Add meg a várost:</label>
+<input type="search" id="city_in" placeholder="Városnév"/>
+<button id="searchCityButton" onclick="getCity()">Keresés</button>
 
 <div id="container">
+    <button id="getLatLonButton" onclick="checkLocation()">Keresés jelenlegi helyzet alapján</button>
+
     <div id="loc_div">City:&#32<span id="loc"></span></div>
     <div id="temp_div">Temperature:&#32<span id="temp"></span></div>
     <img id="img" src=""/>
@@ -38,11 +44,12 @@
     <div id="long"></div>
 </div>
 
-<footer id="footer">
-    <p id="poweredByFooter">Powered by<img id="foot_wu" src=""/></p>
-    <br>
-    <p id="createdByFooter">Created by Shane DiNozzo</p>
-</footer>
+<div data-role="footer" data-position="fixed">
+    <h4>
+        <span>Powered by&#32</span>
+        <img id="foot_wu" src=""/>
+    </h4>
+</div>
 
 </body>
 </html>
