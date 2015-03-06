@@ -16,8 +16,7 @@
 
     <script>
         $(document).ready(function () {
-            $('#foot_wu').attr('src', 'wndrlogo.png');
-            $('#city_in').attr('size', 60);
+            $('#main_cont').hide();
         });
     </script>
 
@@ -28,26 +27,26 @@
     <h1>Little Weather</h1>
 </div>
 
-<label for="city_in">Add meg a várost:</label>
-<input type="search" id="city_in" placeholder="Városnév"/>
-<button id="searchCityButton" onclick="getCity()">Keresés</button>
+<input type="search" id="city_in" placeholder="Add meg a várost" />
+<button id="searchCityButton" onclick="getCity()" data-icon="search">Város keresése</button>
+<button id="getLatLonButton" onclick="checkLocation()" data-icon="star">Helyzet alapú keresés</button>
 
-<div id="container">
-    <button id="getLatLonButton" onclick="checkLocation()">Keresés jelenlegi helyzet alapján</button>
+<div id="main_cont">
+    <div id="container">
+        <div id="loc_div"><span id="loc"></span></div>
+        <div id="temp_div"><span id="temp"></span></div>
+        <img id="wet_icon" src=""/>
 
-    <div id="loc_div">City:&#32<span id="loc"></span></div>
-    <div id="temp_div">Temperature:&#32<span id="temp"></span></div>
-    <img id="img" src=""/>
-
-    <div id="desc_div"><span id="desc"></span></div>
-    <div id="lat"></div>
-    <div id="long"></div>
+        <div id="desc_div"><span id="desc"></span></div>
+    </div>
+    <div id="wind_div"><span id="wind"></span></div>
+    <div id="humidity_div"><span id="humidity"></span> </div>
 </div>
 
 <div data-role="footer" data-position="fixed">
     <h4>
         <span>Powered by&#32</span>
-        <img id="foot_wu" src=""/>
+        <img id="foot_wu" src="wndrlogo.png">
     </h4>
 </div>
 

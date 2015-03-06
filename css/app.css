@@ -1,12 +1,14 @@
-div.ui-input-search {
-    width: 200px !important
+#temp {
+    font-size: 25px;
+    font-weight: bold;
 }
 
-#searchCityButton {
-    width: 175px !important
+#loc {
+    font-size: 22px;
+    font-style: inherit;
 }
 
-#getLatLonButton {
+div.ui-input-search, #searchCityButton, #getLatLonButton {
     width: 270px !important
 }
 
@@ -21,6 +23,20 @@ div.ui-input-search {
     width: 100%;
 }
 
+#search_block {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
 #container {
-    text-align: center;
+    margin-top: 30px;
+}
+
+#wind_div {
+    margin-top: 10px;
+}
+
+#wind_div, #humidity_div {
+    font-size: 12px;
 }
